@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Quickblech – Blechpreisrechner für Handwerker</title>
+  <meta name="description" content="Quickblech ist dein digitaler Helfer zur schnellen Berechnung von Blechpreisen – ideal für Werkstätten, Handwerker und DIY-Projekte.">
+  <meta name="keywords" content="Blech, Preisrechner, Metallbau, App, Werkstatt, Quickblech">
+  <title>Datenschutzerklärung – Quickblech</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1><a href="index.html" class="logo-link">Quickblech</a></h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="ueber.html">Über uns</a></li>
+        <li><a href="download.html">Download</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Datenschutzerklärung</h2>
+      <p>Der Schutz deiner persönlichen Daten ist uns wichtig. Diese Website erhebt und speichert derzeit keine personenbezogenen Daten.</p>
+
+      <p><strong>Verwendete Dienste:</strong><br>
+      Wir verwenden ausschliesslich Google Fonts zur Darstellung von Schriftarten. Dabei kann es vorkommen, dass dein Browser eine Verbindung zu Servern von Google aufbaut.</p>
+
+      <p><strong>Kontakt bei Datenschutzfragen:</strong><br>
+      Nick Abplanalp<br>
+      E-Mail: quickblech@hotmail.com<br>
+      Telefon: 079 939 64 61</p>
+
+      <p>In Zukunft kann ein Cookie-Hinweis und eine Download-Statistik ergänzt werden. Diese Datenschutzerklärung wird dann entsprechend angepasst.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Quickblech – Alle Rechte vorbehalten</p>
+    
+<p>
+  <a href="impressum.html">Impressum</a> | 
+  <a href="datenschutz.html">Datenschutzerklärung</a>
+</p>
+
+  </footer>
+<div id="cookie-banner" style="display:none;">
+  <p>Diese Website verwendet Cookies, um zukünftige Funktionen bereitzustellen – darunter das Zählen von App-Downloads und das Speichern von Einstellungen.</p>
+  <button id="accept-cookies">Akzeptieren</button>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var banner = document.getElementById("cookie-banner");
+    var acceptBtn = document.getElementById("accept-cookies");
+
+    if (!localStorage.getItem("cookiesAccepted")) {
+        banner.style.display = "block";
+    }
+
+    acceptBtn.addEventListener("click", function() {
+        localStorage.setItem("cookiesAccepted", "true");
+        banner.style.display = "none";
+    });
+});
+</script>
+
+</body>
+</html>

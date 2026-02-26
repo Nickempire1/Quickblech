@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Quickblech – Blechpreisrechner für Handwerker</title>
+  <meta name="description" content="Quickblech ist dein digitaler Helfer zur schnellen Berechnung von Blechpreisen – ideal für Werkstätten, Handwerker und DIY-Projekte.">
+  <meta name="keywords" content="Blech, Preisrechner, Metallbau, App, Werkstatt, Quickblech">
+  <title>Quickblech – Startseite</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts für modernes Design -->
+</head>
+<body>
+  <header>
+    <h1><a href="index.html" class="logo-link">Quickblech</a></h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Startseite</a></li>
+        <li><a href="ueber.html">Über uns</a></li>
+        <li><a href="download.html">Download</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Willkommen bei Quickblech</h2>
+      <p>Quickblech ist dein digitaler Partner für die schnelle Berechnung von Blechpreisen. Egal ob du ein erfahrener Handwerker oder ein neugieriger Heimwerker bist – wir helfen dir dabei, dein Projekt effizient zu planen und umzusetzen.</p>
+      <p>Unsere Plattform wurde entwickelt, um dir Zeit zu sparen und dir eine einfache Möglichkeit zu bieten, Anschaffungskosten zu kalkulieren – ganz ohne komplizierte Tabellen oder Formeln.</p>
+    </section>
+
+    <section>
+      <h2>Was wir tun</h2>
+      <p>Wir entwickeln smarte Tools für die Metallverarbeitung. Mit Quickblech kannst du aus verschiedene Blecharten auswählen, Masse, Anzahl Löcher und Abbiegungen angeben und sofort eine Preisabschätzung erhalten. Unsere Software berücksichtigt dabei Materialkosten, Schnittmeter und Verarbeitung.</p>
+      <p>Zusätzlich bieten wir dir die Möglichkeit, deine Projekte lokal zu speichern, damit du jederzeit wieder Zugriff auf deine Berechnungen hast.</p>
+    </section>
+
+    <section>
+      <h2>Unsere Vorteile</h2>
+      <ul>
+        <li>⚙️ Schnelle Preisberechnung direkt in der App</li>
+        <li>📐 Unterstützung für verschiedene Blecharten und Masse</li>
+        <li>📦 Ideal für Handwerker, Firmen und Privatpersonen</li>
+        <li>🇨🇭 Schweizer Qualität und Zuverlässigkeit</li>
+        <li>🔒 Datenschutzkonform und sicher</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Neugierig geworden?</h2>
+      <p>Dann entdecke mehr über unser Team auf der Seite <a href="ueber.html">Über uns</a> oder starte direkt mit dem Berechnen und Installiere die App auf <a href="download.html">Download</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Quickblech – Alle Rechte vorbehalten</p>
+
+<p>
+  <a href="impressum.html">Impressum</a> | 
+  <a href="datenschutz.html">Datenschutzerklärung</a>
+</p>
+
+  </footer>
+<div id="cookie-banner" style="display:none;">
+  <p>Diese Website verwendet Cookies, um zukünftige Funktionen bereitzustellen – darunter das Zählen von App-Downloads und das Speichern von Einstellungen.</p>
+  <button id="accept-cookies">Akzeptieren</button>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var banner = document.getElementById("cookie-banner");
+    var acceptBtn = document.getElementById("accept-cookies");
+
+    if (!localStorage.getItem("cookiesAccepted")) {
+        banner.style.display = "block";
+    }
+
+    acceptBtn.addEventListener("click", function() {
+        localStorage.setItem("cookiesAccepted", "true");
+        banner.style.display = "none";
+    });
+});
+</script>
+
+
+</body>
+</html>

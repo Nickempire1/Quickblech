@@ -1,0 +1,214 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+    background-image: url('Images/quickblech_background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+  background: linear-gradient(to right, #81046c, #a0008b);
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+/* Navigation Styling */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  display: inline-flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Main Content Styling */
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+section {
+  background: white;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #81046c;
+  margin-top: 0;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Kontaktbox Styling */
+.kontaktbox {
+  background-color: #f0e6f5;
+  padding: 20px;
+  border-left: 5px solid #81046c;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+/* Button Styling */
+.button {
+  display: inline-block;
+  background-color: #81046c;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background-color: #6d005a;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  main {
+    padding: 0 10px;
+  }
+}
+
+/* Logo-Link im Header */
+.logo-link {
+  color: white;
+  text-decoration: none;
+}
+
+.logo-link:hover {
+  text-decoration:wavy;
+}
+
+/* Footer optisch anpassen */
+footer a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+#cookie-banner {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #222;
+  color: #fff;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 0.9em;
+  z-index: 1000;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
+}
+
+
+/* Cookie Banner Styling */
+#cookie-banner button {
+  background-color: #81046c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-left: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#cookie-banner button:hover {
+  background-color: #6d005a;
+}
+
+.download-box {
+  background-color: #f9f9f9;
+  border-left: 5px solid #81046c;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.download-box h3 {
+  margin-top: 0;
+  color: #81046c;
+}
+
+.download-box a {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #81046c;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.download-box a:hover {
+  background-color: #6d005a;
+}

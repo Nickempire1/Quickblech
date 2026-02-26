@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Quickblech – Blechpreisrechner für Handwerker</title>
+  <meta name="description" content="Quickblech ist dein digitaler Helfer zur schnellen Berechnung von Blechpreisen – ideal für Werkstätten, Handwerker und DIY-Projekte.">
+  <meta name="keywords" content="Blech, Preisrechner, Metallbau, App, Werkstatt, Quickblech">
+  <title>Download – Quickblech</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Quickblech</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="ueber.html">Über uns</a></li>
+        <li><a href="download.html" class="active">Download</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Quickblech App herunterladen</h2>
+      <p>Unsere App ist der perfekte Begleiter für unterwegs. Mit der Quickblech-App kannst du auch mobil Blechpreise berechnen, Projekte speichern und Angebote vergleichen – alles direkt auf deinem Smartphone oder Tablet.</p>
+      
+        <div class="download-box">
+            <h3>📱 Android</h3>
+            <p>Lade die APK-Datei für Android herunter und installiere sie manuell.</p>
+            <a href="downloads/quickblech.apk" download>Android herunterladen</a>
+          </div>
+
+          <div class="download-box">
+            <h3>🖥️ Windows</h3>
+            <p>Lade die Windows-Version als ZIP-Datei herunter.</p>
+            <a href="downloads/Quickblech.zip" download>Windows herunterladen</a>
+          </div>
+
+          <div class="download-box">
+            <h3>🍎 Apple iOS</h3>
+            <p>Quickblech ist im App Store verfügbar.</p>
+            <a href="https://apps.apple.com">Zum App Store</a>
+          </div>
+
+
+    </section>
+
+    <section>
+      <h2>Installation & Hinweise</h2>
+      <p>Um die App auf Android zu installieren, lade die APK-Datei herunter und öffne sie auf deinem Android-Gerät. Du musst eventuell die Installation aus unbekannten Quellen erlauben – dies kannst du in den Sicherheitseinstellungen deines Geräts aktivieren.</p>
+      <p>Um die App auf Windows zu installieren, lade die Zip-Datei herunter und führe die sich darin befindende exe-Datei aus.</p>
+      <p>Um die App auf einem Gerät von Apple zu installiere, klicke auf den Link. Der führt dich direkt zum App Store und dort zum Download der App.</p>
+      <p>Die App ist sicher, werbefrei und benötigt keine Internetverbindung zur Preisberechnung – ideal für Werkstätten ohne WLAN!</p>
+    </section>
+
+    <section>
+      <h2>Support & Feedback</h2>
+      <p>Bei Fragen zur Installation oder Nutzung der App kannst du dich jederzeit an unser Team wenden. Wir freuen uns auch über Feedback und Verbesserungsvorschläge!</p>
+      <p><a href="kontakt.html">Zum Kontaktformular</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Quickblech – Deine App für smarte Metallbearbeitung</p>
+
+<p>
+  <a href="impressum.html">Impressum</a> | 
+  <a href="datenschutz.html">Datenschutzerklärung</a>
+</p>
+
+  </footer>
+<div id="cookie-banner" style="display:none;">
+  <p>Diese Website verwendet Cookies, um zukünftige Funktionen bereitzustellen – darunter das Zählen von App-Downloads und das Speichern von Einstellungen.</p>
+  <button id="accept-cookies">Akzeptieren</button>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var banner = document.getElementById("cookie-banner");
+    var acceptBtn = document.getElementById("accept-cookies");
+
+    if (!localStorage.getItem("cookiesAccepted")) {
+        banner.style.display = "block";
+    }
+
+    acceptBtn.addEventListener("click", function() {
+        localStorage.setItem("cookiesAccepted", "true");
+        banner.style.display = "none";
+    });
+});
+</script>
+
+
+</body>
+</html>

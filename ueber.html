@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Quickblech – Blechpreisrechner für Handwerker</title>
+  <meta name="description" content="Quickblech ist dein digitaler Helfer zur schnellen Berechnung von Blechpreisen – ideal für Werkstätten, Handwerker und DIY-Projekte.">
+  <meta name="keywords" content="Blech, Preisrechner, Metallbau, App, Werkstatt, Quickblech">
+  <title>Über uns – Quickblech</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1><a href="index.html" class="logo-link">Quickblech</a></h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="ueber.html" class="active">Über uns</a></li>
+        <li><a href="download.html">Download</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Unser Team</h2>
+
+      <div class="download-box">
+        <h3>Simon Abplanalp</h3>
+        <p>Simon ist der Auftraggeber und Testuser von Quickblech. Mit über 20 Jahren Erfahrung in der Metallbaubranche bringt er nicht nur Fachwissen, sondern auch eine klare Vision mit: die Digitalisierung des Handwerks. Er ist verantwortlich für die strategische Ausrichtung und die Qualitätssicherung unserer Lösungen.</p>
+      </div>
+
+      <div class="download-box">
+        <h3>Nick Abplanalp</h3>
+        <p>Nick ist unser Entwickler und kreativer Kopf hinter der Software. Er programmiert, testet und optimiert Quickblech kontinuierlich. Sein Ziel ist es, die Anwendung so benutzerfreundlich und leistungsstark wie möglich zu gestalten. Ausserdem kümmert er sich um neue Features und technische Innovationen.</p>
+      </div>
+
+      <div class="download-box">
+        <h3>Gian Abplanalp</h3>
+        <p>Gian ist unser Designberater und Unterstützer. Er sorgt dafür, dass unsere Software Benutzerfreundlich ist und unterstützt das Team mit kreativen Ideen für das visuelle Erscheinungsbild. Seine technische Ausstattung bildet das Rückgrat unserer Entwicklungsumgebung.</p>
+      </div>
+    </section>
+    <section>
+        <h2>Wie Quickblech entstanden ist</h2>
+        <p>Die Idee zu Quickblech entstand aus einem ganz praktischen Bedürfnis im Alltag der Metallverarbeitung. Bisher wurden Preisberechnungen für Blechteile lokal über eine Excel-Datei durchgeführt – eine Lösung, die zwar funktionierte, aber weder mobil noch besonders flexibel war.</p>
+
+        <p>Als klar wurde, dass es keine passende App für diese Art von Berechnungen gibt, entstand der Wunsch, eine eigene Anwendung zu entwickeln. Mit technischem Know-how aus dem Bereich Informatik und praktischer Erfahrung aus dem Metallbau wurde das Projekt ins Leben gerufen.</p>
+
+        <p>Während die technische Umsetzung und Programmierung übernommen wurde, flossen gleichzeitig wertvolle Hinweise aus der Praxis ein – etwa zur Berechnungslogik oder zur Benutzerführung. So entstand Schritt für Schritt eine Lösung, die speziell auf die Bedürfnisse von Handwerkern und Werkstätten zugeschnitten ist.</p>
+    </section>
+
+
+    <section>
+      <h2>Unsere Mission</h2>
+      <p>Wir glauben daran, dass moderne Technologie auch im Handwerk einen festen Platz hat. Mit Quickblech möchten wir die Arbeit von Metallbauern, Werkstätten und DIY-Begeisterten erleichtern – durch einfache, digitale Werkzeuge, die Zeit sparen und präzise Ergebnisse liefern.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Quickblech – Gemeinsam stark im Metallbau</p>
+
+<p>
+  <a href="impressum.html">Impressum</a> | 
+  <a href="datenschutz.html">Datenschutzerklärung</a>
+</p>
+
+  </footer>
+<div id="cookie-banner" style="display:none;">
+  <p>Diese Website verwendet Cookies, um zukünftige Funktionen bereitzustellen – darunter das Zählen von App-Downloads und das Speichern von Einstellungen.</p>
+  <button id="accept-cookies">Akzeptieren</button>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var banner = document.getElementById("cookie-banner");
+    var acceptBtn = document.getElementById("accept-cookies");
+
+    if (!localStorage.getItem("cookiesAccepted")) {
+        banner.style.display = "block";
+    }
+
+    acceptBtn.addEventListener("click", function() {
+        localStorage.setItem("cookiesAccepted", "true");
+        banner.style.display = "none";
+    });
+});
+</script>
+
+
+</body>
+</html>
